@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-brand-navy-dark: #b58593; /* Official Header/Footer (rgb(181, 133, 147)) */
+  --color-brand-navy: #b58593;      /* Official Header/Footer (rgb(181, 133, 147)) */
+  --color-brand-navy-light: #d593a4; /* Official Primary Brand Color (rgb(213, 147, 164)) */
+  --color-brand-gold: #ffbb2c;
+  --color-brand-gold-hover: #e5aa20;
+  --color-brand-pink: #fdf5f6;      /* Lighter blush background tint */
+  --color-brand-pink-dark: #d593a4; /* Official Primary Brand Color (rgb(213, 147, 164)) */
+  --color-brand-pink-light: #dcb6c1; /* Official Accent Shade (rgb(220, 182, 193)) */
+  --color-whatsapp: #25d366;
+  --color-whatsapp-hover: #20ba56;
+  --color-gulf-blue: #003f5c;
+  --color-gulf-blue-dark: #0a2540;
+
+  --font-sans: 'Open Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Poppins', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-slate-50 text-slate-800 font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-semibold tracking-tight text-brand-navy;
+  }
+}
+
+/* Custom premium classes */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
+}
+
+.glass-panel-dark {
+  background: rgba(181, 133, 147, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #b58593 30%, #d593a4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #ffbb2c 0%, #ffd470 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gulf-blue-gradient {
+  background: linear-gradient(135deg, var(--color-gulf-blue) 0%, var(--color-gulf-blue-dark) 100%);
+}
+
+.text-gradient-gulf {
+  background: linear-gradient(135deg, var(--color-gulf-blue) 0%, var(--color-gulf-blue-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom Hide Scrollbar classes */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Marquee / scrolling list styling */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
