@@ -1,6 +1,5 @@
 import React from 'react';
 import LeadForm from './LeadForm';
-import heroStudent from '../assets/hero_student_georgia.png';
 import { CheckCircle2, ShieldCheck, ArrowRight, ClipboardCheck, PlayCircle } from 'lucide-react';
 
 const HeroSection = ({ onSubmitSuccess, onCtaClick }) => {
@@ -87,8 +86,8 @@ const HeroSection = ({ onSubmitSuccess, onCtaClick }) => {
                 OM Consultant Student in Georgia Campus
               </div>
               <img
-                src={heroStudent}
-                alt="Medical student wearing stethoscope in front of campus"
+                src="/StudentImg.jpg"
+                alt="OmEdu Students Graduation"
                 className="w-full h-[320px] sm:h-[400px] object-cover rounded-2xl border border-white/10 shadow-2xl relative"
               />
               <div className="absolute bottom-6 left-6 right-6 z-20 text-white">

@@ -82,11 +82,34 @@ const LeadForm = ({ onSubmitSuccess, source = "Hero Section" }: any) => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (validate()) {
       setIsSubmitting(true);
-      setTimeout(() => {
+      
+      const payload = {
+        name: formData.studentName,
+        phone: formData.mobileNumber,
+        opportunity: "OmEdu Gulf Landing Page Lead",
+        salesperson_id: 2,
+        company_id: 94,
+        email_from: formData.emailAddress,
+        contact_name: formData.studentName,
+        city: formData.currentGulfCountry,
+        description: `Who is filling: ${formData.whoIsFilling}\nStudent's Education: ${formData.currentAcademicStatus}\nPreferred Course: ${formData.preferredCourse}\nStudy Destination: ${formData.studyDestinationInterest}\nLead Source: ${source}\nSubmission Time: ${new Date().toLocaleString()}`
+      };
+
+      try {
+        await fetch('https://mysamplewebsite.in/api/crm_leads/create', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(payload)
+        });
+      } catch (error) {
+        console.error("CRM Integration Error:", error);
+      } finally {
         setIsSubmitting(false);
         const submissionData = {
           ...formData,
@@ -99,7 +122,7 @@ const LeadForm = ({ onSubmitSuccess, source = "Hero Section" }: any) => {
         localStorage.setItem('omedu_leads', JSON.stringify(existingLeads));
 
         onSubmitSuccess(submissionData);
-      }, 1200);
+      }
     } else {
       const firstErrorKey = Object.keys(errors)[0];
       if (firstErrorKey) {
