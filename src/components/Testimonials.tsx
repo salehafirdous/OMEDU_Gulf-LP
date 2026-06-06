@@ -62,14 +62,14 @@ const Testimonials = () => {
         </div>
 
         {/* CTA */}
-        <div className="text-center">
+        <div className="text-center px-4 sm:px-0">
           <a
             href="https://www.youtube.com/@omconsultants"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center justify-center gap-2 bg-brand-navy hover:bg-brand-navy-dark text-white font-bold py-4 px-8 rounded-xl shadow-lg transition-all duration-200 active:scale-98 font-display"
+            className="inline-flex items-center justify-center gap-2 bg-brand-navy hover:bg-brand-navy-dark text-white font-bold py-3 px-4 sm:py-4 sm:px-8 rounded-xl shadow-lg transition-all duration-200 active:scale-98 font-display w-full sm:w-auto text-sm sm:text-base"
           >
-            <PlayCircle className="h-5 w-5 text-brand-gold" /> Watch Gulf Student Video Stories →
+            <PlayCircle className="h-4 w-4 sm:h-5 sm:w-5 text-brand-gold" /> Watch Gulf Student Video Stories →
           </a>
         </div>
 

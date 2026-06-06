@@ -120,16 +120,20 @@ const FeeTransparency = ({ onCtaClick }) => {
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-6">
           <button
             onClick={onCtaClick}
-            className="bg-brand-gold hover:bg-brand-gold-hover text-brand-navy font-bold py-3.5 px-8 rounded-xl shadow-lg transition-all duration-200 hover:shadow-brand-gold/20 active:scale-98 flex items-center gap-2 w-full sm:w-auto justify-center font-display"
+            className="bg-brand-gold hover:bg-brand-gold-hover text-brand-navy font-bold py-3 px-2 sm:py-3.5 sm:px-8 rounded-xl shadow-lg transition-all duration-200 hover:shadow-brand-gold/20 active:scale-98 flex items-center gap-1.5 sm:gap-2 w-full sm:w-auto justify-center font-display text-sm sm:text-base"
           >
-            <Calculator className="h-5 w-5" /> Get My Personalised Cost Estimate <ArrowRight className="h-4 w-4" />
+            <Calculator className="h-4 w-4 sm:h-5 sm:w-5 shrink-0" /> 
+            <span className="truncate sm:whitespace-normal">Get My Personalised Cost Estimate</span> 
+            <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
           </button>
 
           <button
             onClick={onCtaClick}
-            className="bg-white hover:bg-slate-50 text-brand-navy border border-slate-200 font-bold py-3.5 px-8 rounded-xl shadow-sm transition-all duration-200 active:scale-98 flex items-center gap-2 w-full sm:w-auto justify-center font-display"
+            className="bg-white hover:bg-slate-50 text-brand-navy border border-slate-200 font-bold py-3 px-2 sm:py-3.5 sm:px-8 rounded-xl shadow-sm transition-all duration-200 active:scale-98 flex items-center gap-1.5 sm:gap-2 w-full sm:w-auto justify-center font-display text-[13px] sm:text-base whitespace-nowrap sm:whitespace-normal"
           >
-            <MessageCircle className="h-5 w-5" /> Ask a Counsellor About Fees <ArrowRight className="h-4 w-4" />
+            <MessageCircle className="h-4 w-4 sm:h-5 sm:w-5 shrink-0" /> 
+            <span>Ask a Counsellor About Fees</span> 
+            <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
           </button>
         </div>
 

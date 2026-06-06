@@ -138,21 +138,21 @@ const PartnersAndTrust = ({ onCtaClick }) => {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-center gap-4 shrink-0">
+            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 shrink-0 w-full lg:w-auto">
               <a
                 href="https://www.youtube.com/@omconsultants/videos"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-red-600 hover:bg-red-700 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg transition-all duration-200 hover:shadow-red-600/20 active:scale-98 flex items-center gap-2 text-sm sm:text-base cursor-pointer font-display"
+                className="bg-red-600 hover:bg-red-700 text-white font-bold py-2.5 px-4 sm:py-3.5 sm:px-6 rounded-xl shadow-lg transition-all duration-200 hover:shadow-red-600/20 active:scale-98 flex items-center justify-center gap-2 text-sm sm:text-base cursor-pointer font-display w-full sm:w-auto"
               >
-                <YoutubeIcon className="h-5 w-5 text-white" />
+                <YoutubeIcon className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
                 <span>Watch Student Stories</span>
-                <ArrowUpRight className="h-4.5 w-4.5" />
+                <ArrowUpRight className="h-3.5 w-3.5 sm:h-4.5 sm:w-4.5" />
               </a>
 
               <button
                 onClick={onCtaClick}
-                className="bg-brand-gold hover:bg-brand-gold-hover text-brand-navy font-bold py-3.5 px-6 rounded-xl shadow-lg transition-all duration-200 hover:shadow-brand-gold/10 active:scale-98 text-sm sm:text-base cursor-pointer font-display"
+                className="bg-brand-gold hover:bg-brand-gold-hover text-brand-navy font-bold py-2.5 px-4 sm:py-3.5 sm:px-6 rounded-xl shadow-lg transition-all duration-200 hover:shadow-brand-gold/10 active:scale-98 text-sm sm:text-base cursor-pointer font-display flex items-center justify-center w-full sm:w-auto"
               >
                 Get Free Counselling
               </button>
