@@ -67,9 +67,10 @@ const Testimonials = () => {
             href="https://www.youtube.com/@omconsultants"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center justify-center gap-2 bg-brand-navy hover:bg-brand-navy-dark text-white font-bold py-3 px-4 sm:py-4 sm:px-8 rounded-xl shadow-lg transition-all duration-200 active:scale-98 font-display w-full sm:w-auto text-sm sm:text-base"
+            className="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-brand-navy hover:bg-brand-navy-dark text-white font-bold py-3 px-2 sm:py-4 sm:px-8 rounded-xl shadow-lg transition-all duration-200 active:scale-98 font-display w-full sm:w-auto text-[13px] sm:text-base whitespace-nowrap sm:whitespace-normal"
           >
-            <PlayCircle className="h-4 w-4 sm:h-5 sm:w-5 text-brand-gold" /> Watch Gulf Student Video Stories →
+            <PlayCircle className="h-4 w-4 sm:h-5 sm:w-5 text-brand-gold shrink-0" /> 
+            <span>Watch Gulf Student Video Stories →</span>
           </a>
         </div>
 

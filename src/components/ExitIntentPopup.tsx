@@ -149,13 +149,13 @@ const ExitIntentPopup = ({ onSubmitSuccess }) => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-brand-gold hover:bg-brand-gold-hover text-brand-navy font-bold py-3.5 px-4 rounded-xl shadow-lg transition-all duration-200 active:scale-98 flex items-center justify-center gap-2 mt-2 font-display disabled:opacity-70 disabled:cursor-not-allowed"
+              className="w-full bg-brand-gold hover:bg-brand-gold-hover text-brand-navy font-bold py-3.5 px-2 sm:px-4 rounded-xl shadow-lg transition-all duration-200 active:scale-98 flex items-center justify-center gap-1.5 sm:gap-2 mt-2 font-display disabled:opacity-70 disabled:cursor-not-allowed text-[13px] sm:text-base whitespace-nowrap sm:whitespace-normal"
             >
               {isSubmitting ? (
-                <span className="inline-block animate-spin rounded-full h-5 w-5 border-2 border-brand-navy border-t-transparent"></span>
+                <span className="inline-block animate-spin rounded-full h-4 w-4 sm:h-5 sm:w-5 border-2 border-brand-navy border-t-transparent"></span>
               ) : (
                 <>
-                  <Download className="h-5 w-5" /> Send Me the Free Gulf Guide →
+                  <Download className="h-4 w-4 sm:h-5 sm:w-5 shrink-0" /> Send Me the Free Gulf Guide →
                 </>
               )}
             </button>
