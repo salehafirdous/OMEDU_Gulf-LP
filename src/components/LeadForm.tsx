@@ -320,7 +320,7 @@ const LeadForm = ({ onSubmitSuccess, source = "Hero Section" }: any) => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-brand-gold hover:bg-brand-gold-hover text-brand-navy font-bold py-3 px-4 rounded-xl shadow-md transition-all duration-200 flex items-center justify-center gap-2 mt-4 active:scale-98 cursor-pointer disabled:opacity-75 disabled:cursor-not-allowed text-base font-display"
+          className="w-full bg-brand-gold hover:bg-brand-gold-hover text-brand-navy font-bold py-3 px-2 sm:px-4 rounded-xl shadow-md transition-all duration-200 flex items-center justify-center gap-2 mt-4 active:scale-98 cursor-pointer disabled:opacity-75 disabled:cursor-not-allowed text-sm sm:text-base font-display whitespace-nowrap sm:whitespace-normal"
         >
           {isSubmitting ? (
             <span className="inline-block animate-spin rounded-full h-5 w-5 border-2 border-brand-navy border-t-transparent"></span>
