@@ -9,17 +9,17 @@ const Footer = ({ onCtaClick }) => {
     <footer className="bg-brand-navy text-slate-100 pt-10 pb-6 px-4 sm:px-6 lg:px-8 border-t border-white/10 relative overflow-hidden">
       {/* Decorative Glow */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-brand-navy/10 rounded-full blur-3xl pointer-events-none -translate-y-1/2"></div>
-      
+
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-8">
-          
+
           {/* Column 1: Brand & About */}
           <div className="space-y-6">
             <div className="inline-block">
               <img src={logo} alt="OM Consultants Logo" className="h-10 sm:h-12 w-auto object-contain drop-shadow-md" />
             </div>
             <p className="text-sm leading-relaxed text-white/90 font-medium">
-              India's pioneer in European medical education since 2000. Sharjah UAE office serving Gulf NRI families. MBBS in Georgia, Czech Republic, Poland & Italy. 4,000+ Indian doctors created.
+              India's pioneer in European medical education since 2003. Sharjah UAE office serving Gulf NRI families. MBBS in Georgia, Czech Republic, Poland & Italy. 4,000+ Indian doctors created.
             </p>
             <div className="flex items-center gap-2 text-brand-gold text-sm font-bold bg-white/5 w-fit px-3 py-1.5 rounded-lg border border-white/10">
               <ShieldCheck className="h-4 w-4" /> 24 Years of Trust
@@ -73,27 +73,44 @@ const Footer = ({ onCtaClick }) => {
 
           {/* Column 4: Location Map */}
           <div className="space-y-6">
-            <h4 className="text-white font-bold font-display text-lg tracking-wide uppercase">Sharjah Office</h4>
-            <ul className="space-y-4 text-sm">
-              <li className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-brand-gold shrink-0 mt-0.5" />
-                <span>SRTIP Building C, Office 02-01,<br/>Sharjah, UAE</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Clock className="h-5 w-5 text-brand-gold shrink-0 mt-0.5" />
-                <span>Mon-Sat: 9:00 AM - 6:00 PM<br/>Friday: 9:00 AM - 12:00 PM</span>
-              </li>
-            </ul>
-            <div className="mt-4 w-full h-40 bg-slate-800 rounded-xl overflow-hidden border border-white/20 relative shadow-inner">
-              <iframe 
-                src="https://maps.google.com/maps?q=OM%20Consultants%20(FZC),%20SRTIP%20Building%20C,%20Sharjah&t=&z=14&ie=UTF8&iwloc=&output=embed" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen 
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
+            <h4 className="text-white font-bold font-display text-lg tracking-wide uppercase">Our Offices</h4>
+            
+            <div className="space-y-4">
+              {/* Sharjah Map */}
+              <div className="space-y-2">
+                <h5 className="text-brand-gold font-semibold text-sm flex items-center gap-1.5">
+                  <MapPin className="h-4 w-4" /> Sharjah, UAE
+                </h5>
+                <div className="w-full h-32 bg-slate-800 rounded-xl overflow-hidden border border-white/20 relative shadow-inner">
+                  <iframe
+                    src="https://maps.google.com/maps?q=OM%20Consultants%20(FZC),%20SRTIP%20Building%20C,%20Sharjah&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+
+              {/* Chennai Map */}
+              <div className="space-y-2 pt-2">
+                <h5 className="text-brand-gold font-semibold text-sm flex items-center gap-1.5">
+                  <MapPin className="h-4 w-4" /> Chennai, India
+                </h5>
+                <div className="w-full h-32 bg-slate-800 rounded-xl overflow-hidden border border-white/20 relative shadow-inner">
+                  <iframe
+                    src="https://maps.google.com/maps?q=OM%20Consultants,%20Chennai&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
             </div>
           </div>
 

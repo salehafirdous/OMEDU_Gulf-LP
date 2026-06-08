@@ -1,16 +1,34 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import LeadForm from './LeadForm';
 import { CheckCircle2, ShieldCheck, ArrowRight, ClipboardCheck, PlayCircle } from 'lucide-react';
 
 const HeroSection = ({ onSubmitSuccess, onCtaClick }) => {
+  const sliderImages = [
+    '/StudentImg.jpg',
+    '/slider1.jpg',
+    '/slider2.jpg',
+    '/slider3.jpg',
+    '/slider4.jpg',
+    '/slider5.jpg'
+  ];
 
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        prevIndex === sliderImages.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000);
+    return () => clearInterval(timer);
+  }, []);
   const promises = [
     { text: "100% free consultation", highlight: "Sharjah office, WhatsApp or video call. Zero fees." },
     { text: "Your Gulf counsellor calls you back within 2 hours", highlight: "in Gulf Standard Time." },
     { text: "Every cost disclosed before you commit to anything", highlight: "Zero hidden fees in 24 years." },
     { text: "Sharjah office open", highlight: "Mon-Sat." },
     { text: "Our on-ground Georgia team picks up your child at the airport on Day 1", highlight: "They are never alone." },
-    { text: "Indian food", highlight: "every single day. 20 years running. Not occasionally. Every day." }
+    { text: "Food", highlight: "every single day. 20 years running. Not occasionally. Every day." }
   ];
 
   return (
@@ -85,13 +103,20 @@ const HeroSection = ({ onSubmitSuccess, onCtaClick }) => {
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
                 OM Consultant Student in Georgia Campus
               </div>
-              <img
-                src="/StudentImg.jpg"
-                alt="OmEdu Students Graduation"
-                className="w-full h-[320px] sm:h-[400px] object-cover rounded-2xl border border-white/10 shadow-2xl relative"
-              />
+              <div className="relative w-full h-[320px] sm:h-[400px] rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+                {sliderImages.map((img, index) => (
+                  <img
+                    key={index}
+                    src={img}
+                    alt={`OmEdu Students Graduation ${index + 1}`}
+                    className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+                      index === currentImageIndex ? 'opacity-100 z-0' : 'opacity-0 -z-10'
+                    }`}
+                  />
+                ))}
+              </div>
               <div className="absolute bottom-6 left-6 right-6 z-20 text-white">
-                <p className="text-sm font-semibold font-display">Original Pioneer Since 2000</p>
+                <p className="text-sm font-semibold font-display">Original Pioneer Since 2003</p>
                 <p className="text-xs text-white/90">Trusted by families nationwide and across the Gulf for over two decades.</p>
               </div>
             </div>

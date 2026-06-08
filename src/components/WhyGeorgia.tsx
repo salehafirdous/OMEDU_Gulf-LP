@@ -87,7 +87,7 @@ const WhyGeorgia = ({ onCtaClick }) => {
               </h3>
 
               <p className="text-slate-100 text-sm sm:text-base leading-relaxed">
-                OM Consultants introduced Georgian medical education to Indian students in 2000 - before any competitor. That's two decades of relationships with universities, the Education Ministry, and on-ground infrastructure that no new entrant can replicate.
+                OM Consultants introduced Georgian medical education to Indian students in 2003 - before any competitor. That's two decades of relationships with universities, the Education Ministry, and on-ground infrastructure that no new entrant can replicate.
               </p>
 
               <p className="text-slate-100 text-sm sm:text-base leading-relaxed">
@@ -97,7 +97,7 @@ const WhyGeorgia = ({ onCtaClick }) => {
 
             <div className="lg:col-span-4 flex flex-col items-stretch sm:items-center lg:items-end justify-center">
               <div className="bg-brand-navy border border-white/10 p-6 rounded-2xl text-center w-full max-w-sm mb-6 shadow-lg">
-                <p className="text-3xl font-black text-brand-gold font-display">Year 2000</p>
+                <p className="text-3xl font-black text-brand-gold font-display">Year 2003</p>
                 <p className="text-xs text-white/90 mt-1 uppercase tracking-wider font-bold">First Batch Sent to Georgia</p>
                 <div className="w-12 h-0.5 bg-brand-pink mx-auto my-3"></div>
                 <p className="text-xs text-slate-100">Establishing the trust and standard for Indian students abroad.</p>

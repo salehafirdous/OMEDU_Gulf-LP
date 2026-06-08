@@ -93,7 +93,8 @@ const FeeTransparency = ({ onCtaClick }) => {
                   </td>
                 </tr>
                 {/* Row 4 */}
-                <tr className="hover:bg-slate-50/50 transition-colors">
+                <tr className="hover:bg-slate-50/50 transition-col 
+                ors">
                   <td className="p-6 font-semibold text-brand-navy border-r border-slate-100 bg-slate-50/30">
                     Accommodation (6 years)
                   </td>
@@ -122,8 +123,8 @@ const FeeTransparency = ({ onCtaClick }) => {
             onClick={onCtaClick}
             className="bg-brand-gold hover:bg-brand-gold-hover text-brand-navy font-bold py-3 px-2 sm:py-3.5 sm:px-8 rounded-xl shadow-lg transition-all duration-200 hover:shadow-brand-gold/20 active:scale-98 flex items-center gap-1.5 sm:gap-2 w-full sm:w-auto justify-center font-display text-sm sm:text-base"
           >
-            <Calculator className="h-4 w-4 sm:h-5 sm:w-5 shrink-0" /> 
-            <span className="truncate sm:whitespace-normal">Get My Personalised Cost Estimate</span> 
+            <Calculator className="h-4 w-4 sm:h-5 sm:w-5 shrink-0" />
+            <span className="truncate sm:whitespace-normal">Get My Personalised Cost Estimate</span>
             <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
           </button>
 
@@ -131,8 +132,8 @@ const FeeTransparency = ({ onCtaClick }) => {
             onClick={onCtaClick}
             className="bg-white hover:bg-slate-50 text-brand-navy border border-slate-200 font-bold py-3 px-2 sm:py-3.5 sm:px-8 rounded-xl shadow-sm transition-all duration-200 active:scale-98 flex items-center gap-1.5 sm:gap-2 w-full sm:w-auto justify-center font-display text-[13px] sm:text-base whitespace-nowrap sm:whitespace-normal"
           >
-            <MessageCircle className="h-4 w-4 sm:h-5 sm:w-5 shrink-0" /> 
-            <span>Ask a Counsellor About Fees</span> 
+            <MessageCircle className="h-4 w-4 sm:h-5 sm:w-5 shrink-0" />
+            <span>Ask a Counsellor About Fees</span>
             <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
           </button>
         </div>

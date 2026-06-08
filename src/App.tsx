@@ -132,7 +132,7 @@ function App() {
         href="https://wa.me/971505204207?text=Hi,%20I%20am%20a%20Gulf%20NRI%20family%20and%20want%20to%20know%20about%20MBBS%20abroad" 
         target="_blank" 
         rel="noreferrer"
-        className="fixed bottom-[80px] right-5 w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform z-40 animate-bounce cursor-pointer bg-white"
+        className="fixed bottom-[80px] left-5 w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform z-40 animate-bounce cursor-pointer bg-white"
         style={{ animationDuration: '2.5s' }}
       >
         <img 
